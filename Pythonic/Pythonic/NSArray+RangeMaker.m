@@ -81,7 +81,7 @@
 }
 
 + (NSArray *)arrayWithTo:(NSInteger)to step:(NSInteger)step {
-    return [[[NSArray alloc] initWithTo:to] autorelease];
+    return [[[NSArray alloc] initWithTo:to step:step] autorelease];
 }
 
 @end

@@ -8,6 +8,15 @@
 
 #import "NSArray+Split.h"
 
+typedef BOOL (^InRange)(NSInteger);
+
+@interface NSArray (Private)
+
+- (NSInteger) normaric:(NSInteger) index;
+- (InRange) inRangeFrom:(NSInteger)from to:(NSInteger)to;
+
+@end
+
 @implementation NSArray (Split)
 
 - (NSArray *) arrayWithRange:(NSRange) range {
@@ -15,12 +24,13 @@
 }
 
 - (NSArray *) arrayWithFrom:(NSInteger)from to:(NSInteger)to {
-    NSInteger length = to - from;
-    NSMutableArray *ret = [[[NSMutableArray alloc] initWithCapacity:length] autorelease];
-    for (NSInteger i=from; i < MIN(to, [self count]); i++) {
-        [ret addObject:[self objectAtIndex:i]];
+    NSInteger _from = [self normaric:from];
+    NSInteger _to = [self normaric:to];
+    if (_from == _to) {
+        return @[];
     }
-    return ret;
+    NSInteger step = (_to>_from)?1:-1;
+    return [self arrayWithFrom:_from to:_to step:step];
 }
 
 - (NSArray *) arrayWithFrom:(NSInteger)from {
@@ -36,9 +46,17 @@
 }
 
 - (NSArray *) arrayWithFrom:(NSInteger)from to:(NSInteger)to step:(NSInteger) step {
-    NSInteger length = to - from;
+    NSInteger _from = [self normaric:from];
+    NSInteger _to = [self normaric:to];
+    if (_from == _to) {
+        return @[];
+    }
+    NSInteger length = labs(_to - _from);
     NSMutableArray *ret = [[[NSMutableArray alloc] initWithCapacity:length] autorelease];
-    for (NSInteger i=from; i < MIN(length, [self count]); i+=step) {
+    void (^next)(NSInteger* idx) = ^(NSInteger* idx){(*idx)+=step;};
+    InRange inRange = [self inRangeFrom:_from to:_to];
+    
+    for (NSInteger i=_from; inRange(i); next(&i)) {
         [ret addObject:[self objectAtIndex:i]];
     }
     return ret;
@@ -50,6 +68,28 @@
 
 - (NSArray *) arrayWithTo:(NSInteger)to step:(NSInteger) step {
     return [self arrayWithFrom:0 to:to step:step];
+}
+
+// convert negative index to index like python split
+- (NSInteger)normaric:(NSInteger)index {
+    if (labs(index) > self.count -1) {
+        NSException *exp = [NSException exceptionWithName:@"IndexOutRange"
+                                                   reason:@"value out array range"
+                                                 userInfo:Nil];
+        @throw exp;
+    }
+    if (index < 0) {
+        return self.count + index;
+    } else {
+        return index;
+    }
+}
+
+- (InRange)inRangeFrom:(NSInteger)from to:(NSInteger)to {
+    NSInteger low = MIN(from, to);
+    NSInteger top = MAX(from, to);
+    InRange ret = ^(NSInteger index){return (BOOL)((low<=index)&&(index<top));};
+    return ret;
 }
 
 @end
