@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		396B3BC316FB09FF00B1B339 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BC216FB09FF00B1B339 /* Cocoa.framework */; };
+		396B3BCD16FB09FF00B1B339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 396B3BCB16FB09FF00B1B339 /* InfoPlist.strings */; };
+		396B3BDF16FB0A3E00B1B339 /* NSArray+Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BD716FB0A3E00B1B339 /* NSArray+Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396B3BE016FB0A3E00B1B339 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3BD816FB0A3E00B1B339 /* NSArray+Random.m */; };
+		396B3BE116FB0A3E00B1B339 /* NSArray+RangeMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BD916FB0A3E00B1B339 /* NSArray+RangeMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396B3BE216FB0A3E00B1B339 /* NSArray+RangeMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3BDA16FB0A3E00B1B339 /* NSArray+RangeMaker.m */; };
+		396B3BE316FB0A3E00B1B339 /* NSArray+Split.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BDB16FB0A3E00B1B339 /* NSArray+Split.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396B3BE416FB0A3E00B1B339 /* NSArray+Split.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3BDC16FB0A3E00B1B339 /* NSArray+Split.m */; };
+		396B3BE516FB0A3E00B1B339 /* NSArray+Trim.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BDD16FB0A3E00B1B339 /* NSArray+Trim.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396B3BE616FB0A3E00B1B339 /* NSArray+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3BDE16FB0A3E00B1B339 /* NSArray+Trim.m */; };
+		396B3BE816FB0A8E00B1B339 /* Pythonic.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BE716FB0A7200B1B339 /* Pythonic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396B3BF816FB0DB700B1B339 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BC216FB09FF00B1B339 /* Cocoa.framework */; };
+		396B3BFE16FB0DB800B1B339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 396B3BFC16FB0DB800B1B339 /* InfoPlist.strings */; };
+		396B3C0016FB0DB800B1B339 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3BFF16FB0DB800B1B339 /* main.m */; };
+		396B3C0416FB0DB800B1B339 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 396B3C0216FB0DB800B1B339 /* Credits.rtf */; };
+		396B3C0716FB0DB800B1B339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3C0616FB0DB800B1B339 /* AppDelegate.m */; };
+		396B3C0E16FB0E3400B1B339 /* Pythonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BBF16FB09FF00B1B339 /* Pythonic.framework */; };
+		396B3C0F16FB0E4600B1B339 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BF116FB0DA900B1B339 /* GHUnit.framework */; };
+		396B3C1116FB0E5600B1B339 /* GHUnit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 396B3BF116FB0DA900B1B339 /* GHUnit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		396B3C1016FB0E5100B1B339 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				396B3C1116FB0E5600B1B339 /* GHUnit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		396B3BBF16FB09FF00B1B339 /* Pythonic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pythonic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		396B3BC216FB09FF00B1B339 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		396B3BC516FB09FF00B1B339 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		396B3BC616FB09FF00B1B339 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		396B3BC716FB09FF00B1B339 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		396B3BCA16FB09FF00B1B339 /* Pythonic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pythonic-Info.plist"; sourceTree = "<group>"; };
+		396B3BCC16FB09FF00B1B339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		396B3BCE16FB09FF00B1B339 /* Pythonic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pythonic-Prefix.pch"; sourceTree = "<group>"; };
+		396B3BD716FB0A3E00B1B339 /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
+		396B3BD816FB0A3E00B1B339 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
+		396B3BD916FB0A3E00B1B339 /* NSArray+RangeMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RangeMaker.h"; sourceTree = "<group>"; };
+		396B3BDA16FB0A3E00B1B339 /* NSArray+RangeMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RangeMaker.m"; sourceTree = "<group>"; };
+		396B3BDB16FB0A3E00B1B339 /* NSArray+Split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Split.h"; sourceTree = "<group>"; };
+		396B3BDC16FB0A3E00B1B339 /* NSArray+Split.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Split.m"; sourceTree = "<group>"; };
+		396B3BDD16FB0A3E00B1B339 /* NSArray+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Trim.h"; sourceTree = "<group>"; };
+		396B3BDE16FB0A3E00B1B339 /* NSArray+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Trim.m"; sourceTree = "<group>"; };
+		396B3BE716FB0A7200B1B339 /* Pythonic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pythonic.h; sourceTree = "<group>"; };
+		396B3BF116FB0DA900B1B339 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnit.framework; sourceTree = "<group>"; };
+		396B3BF716FB0DB700B1B339 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		396B3BFB16FB0DB800B1B339 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		396B3BFD16FB0DB800B1B339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		396B3BFF16FB0DB800B1B339 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		396B3C0116FB0DB800B1B339 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		396B3C0316FB0DB800B1B339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		396B3C0516FB0DB800B1B339 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		396B3C0616FB0DB800B1B339 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		396B3BBB16FB09FF00B1B339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3BC316FB09FF00B1B339 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		396B3BF416FB0DB700B1B339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3C0F16FB0E4600B1B339 /* GHUnit.framework in Frameworks */,
+				396B3C0E16FB0E3400B1B339 /* Pythonic.framework in Frameworks */,
+				396B3BF816FB0DB700B1B339 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		396B3BB516FB09FF00B1B339 = {
+			isa = PBXGroup;
+			children = (
+				396B3BC816FB09FF00B1B339 /* Pythonic */,
+				396B3BF916FB0DB700B1B339 /* Tests */,
+				396B3BC116FB09FF00B1B339 /* Frameworks */,
+				396B3BC016FB09FF00B1B339 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		396B3BC016FB09FF00B1B339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BBF16FB09FF00B1B339 /* Pythonic.framework */,
+				396B3BF716FB0DB700B1B339 /* Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		396B3BC116FB09FF00B1B339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BF116FB0DA900B1B339 /* GHUnit.framework */,
+				396B3BC216FB09FF00B1B339 /* Cocoa.framework */,
+				396B3BC416FB09FF00B1B339 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		396B3BC416FB09FF00B1B339 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BC516FB09FF00B1B339 /* AppKit.framework */,
+				396B3BC616FB09FF00B1B339 /* CoreData.framework */,
+				396B3BC716FB09FF00B1B339 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		396B3BC816FB09FF00B1B339 /* Pythonic */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BE716FB0A7200B1B339 /* Pythonic.h */,
+				396B3BD716FB0A3E00B1B339 /* NSArray+Random.h */,
+				396B3BD816FB0A3E00B1B339 /* NSArray+Random.m */,
+				396B3BD916FB0A3E00B1B339 /* NSArray+RangeMaker.h */,
+				396B3BDA16FB0A3E00B1B339 /* NSArray+RangeMaker.m */,
+				396B3BDB16FB0A3E00B1B339 /* NSArray+Split.h */,
+				396B3BDC16FB0A3E00B1B339 /* NSArray+Split.m */,
+				396B3BDD16FB0A3E00B1B339 /* NSArray+Trim.h */,
+				396B3BDE16FB0A3E00B1B339 /* NSArray+Trim.m */,
+				396B3BC916FB09FF00B1B339 /* Supporting Files */,
+			);
+			path = Pythonic;
+			sourceTree = "<group>";
+		};
+		396B3BC916FB09FF00B1B339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BCA16FB09FF00B1B339 /* Pythonic-Info.plist */,
+				396B3BCB16FB09FF00B1B339 /* InfoPlist.strings */,
+				396B3BCE16FB09FF00B1B339 /* Pythonic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		396B3BF916FB0DB700B1B339 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				396B3C0516FB0DB800B1B339 /* AppDelegate.h */,
+				396B3C0616FB0DB800B1B339 /* AppDelegate.m */,
+				396B3BFA16FB0DB800B1B339 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		396B3BFA16FB0DB800B1B339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				396B3BFB16FB0DB800B1B339 /* Tests-Info.plist */,
+				396B3BFC16FB0DB800B1B339 /* InfoPlist.strings */,
+				396B3BFF16FB0DB800B1B339 /* main.m */,
+				396B3C0116FB0DB800B1B339 /* Tests-Prefix.pch */,
+				396B3C0216FB0DB800B1B339 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		396B3BBC16FB09FF00B1B339 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3BE816FB0A8E00B1B339 /* Pythonic.h in Headers */,
+				396B3BDF16FB0A3E00B1B339 /* NSArray+Random.h in Headers */,
+				396B3BE116FB0A3E00B1B339 /* NSArray+RangeMaker.h in Headers */,
+				396B3BE316FB0A3E00B1B339 /* NSArray+Split.h in Headers */,
+				396B3BE516FB0A3E00B1B339 /* NSArray+Trim.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		396B3BBE16FB09FF00B1B339 /* Pythonic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 396B3BD416FB09FF00B1B339 /* Build configuration list for PBXNativeTarget "Pythonic" */;
+			buildPhases = (
+				396B3BBA16FB09FF00B1B339 /* Sources */,
+				396B3BBB16FB09FF00B1B339 /* Frameworks */,
+				396B3BBC16FB09FF00B1B339 /* Headers */,
+				396B3BBD16FB09FF00B1B339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pythonic;
+			productName = Pythonic;
+			productReference = 396B3BBF16FB09FF00B1B339 /* Pythonic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		396B3BF616FB0DB700B1B339 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 396B3C0B16FB0DB800B1B339 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				396B3BF316FB0DB700B1B339 /* Sources */,
+				396B3BF416FB0DB700B1B339 /* Frameworks */,
+				396B3BF516FB0DB700B1B339 /* Resources */,
+				396B3C1016FB0E5100B1B339 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 396B3BF716FB0DB700B1B339 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		396B3BB616FB09FF00B1B339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "dwarf-artisan";
+			};
+			buildConfigurationList = 396B3BB916FB09FF00B1B339 /* Build configuration list for PBXProject "Pythonic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 396B3BB516FB09FF00B1B339;
+			productRefGroup = 396B3BC016FB09FF00B1B339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				396B3BBE16FB09FF00B1B339 /* Pythonic */,
+				396B3BF616FB0DB700B1B339 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		396B3BBD16FB09FF00B1B339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3BCD16FB09FF00B1B339 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		396B3BF516FB0DB700B1B339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3BFE16FB0DB800B1B339 /* InfoPlist.strings in Resources */,
+				396B3C0416FB0DB800B1B339 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		396B3BBA16FB09FF00B1B339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3BE016FB0A3E00B1B339 /* NSArray+Random.m in Sources */,
+				396B3BE216FB0A3E00B1B339 /* NSArray+RangeMaker.m in Sources */,
+				396B3BE416FB0A3E00B1B339 /* NSArray+Split.m in Sources */,
+				396B3BE616FB0A3E00B1B339 /* NSArray+Trim.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		396B3BF316FB0DB700B1B339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396B3C0016FB0DB800B1B339 /* main.m in Sources */,
+				396B3C0716FB0DB800B1B339 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		396B3BCB16FB09FF00B1B339 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396B3BCC16FB09FF00B1B339 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		396B3BFC16FB0DB800B1B339 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396B3BFD16FB0DB800B1B339 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		396B3C0216FB0DB800B1B339 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396B3C0316FB0DB800B1B339 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		396B3BD216FB09FF00B1B339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		396B3BD316FB09FF00B1B339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		396B3BD516FB09FF00B1B339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pythonic/Pythonic-Prefix.pch";
+				INFOPLIST_FILE = "Pythonic/Pythonic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		396B3BD616FB09FF00B1B339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pythonic/Pythonic-Prefix.pch";
+				INFOPLIST_FILE = "Pythonic/Pythonic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		396B3C0C16FB0DB800B1B339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		396B3C0D16FB0DB800B1B339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		396B3BB916FB09FF00B1B339 /* Build configuration list for PBXProject "Pythonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396B3BD216FB09FF00B1B339 /* Debug */,
+				396B3BD316FB09FF00B1B339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		396B3BD416FB09FF00B1B339 /* Build configuration list for PBXNativeTarget "Pythonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396B3BD516FB09FF00B1B339 /* Debug */,
+				396B3BD616FB09FF00B1B339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		396B3C0B16FB0DB800B1B339 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396B3C0C16FB0DB800B1B339 /* Debug */,
+				396B3C0D16FB0DB800B1B339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 396B3BB616FB09FF00B1B339 /* Project object */;
+}
