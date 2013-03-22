@@ -12,7 +12,7 @@
 
 // convert negative index to index like python split
 - (NSInteger)normaric:(NSInteger)index {
-    if (labs(index) > self.count -1) {
+    if (labs(index) > self.count) {
         NSException *exp = [NSException exceptionWithName:@"IndexOutRange"
                                                    reason:@"value out array range"
                                                  userInfo:Nil];

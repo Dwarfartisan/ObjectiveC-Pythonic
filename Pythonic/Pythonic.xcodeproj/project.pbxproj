@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		392DF61B16FC60CE008C0D5A /* NSArray+Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 392DF61916FC60CE008C0D5A /* NSArray+Index.h */; };
 		392DF61C16FC60CE008C0D5A /* NSArray+Index.m in Sources */ = {isa = PBXBuildFile; fileRef = 392DF61A16FC60CE008C0D5A /* NSArray+Index.m */; };
+		392DF62916FCA7A6008C0D5A /* SplitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 392DF62816FCA7A6008C0D5A /* SplitTests.m */; };
 		3960532616FC4D3000B325D8 /* CodeStickets.h in Headers */ = {isa = PBXBuildFile; fileRef = 3960532516FC4D3000B325D8 /* CodeStickets.h */; };
 		396B3BC316FB09FF00B1B339 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BC216FB09FF00B1B339 /* Cocoa.framework */; };
 		396B3BCD16FB09FF00B1B339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 396B3BCB16FB09FF00B1B339 /* InfoPlist.strings */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		392DF61916FC60CE008C0D5A /* NSArray+Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Index.h"; sourceTree = "<group>"; };
 		392DF61A16FC60CE008C0D5A /* NSArray+Index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Index.m"; sourceTree = "<group>"; };
+		392DF62716FCA7A6008C0D5A /* SplitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitTests.h; sourceTree = "<group>"; };
+		392DF62816FCA7A6008C0D5A /* SplitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitTests.m; sourceTree = "<group>"; };
 		3960532516FC4D3000B325D8 /* CodeStickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStickets.h; sourceTree = "<group>"; };
 		396B3BBF16FB09FF00B1B339 /* Pythonic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pythonic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B3BC216FB09FF00B1B339 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -178,6 +181,8 @@
 				396B3BFA16FB0DB800B1B339 /* Supporting Files */,
 				396B3C1216FB32E400B1B339 /* RangeTests.h */,
 				396B3C1316FB32E400B1B339 /* RangeTests.m */,
+				392DF62716FCA7A6008C0D5A /* SplitTests.h */,
+				392DF62816FCA7A6008C0D5A /* SplitTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				396B3C0016FB0DB800B1B339 /* main.m in Sources */,
 				396B3C0716FB0DB800B1B339 /* AppDelegate.m in Sources */,
 				396B3C1416FB32E400B1B339 /* RangeTests.m in Sources */,
+				392DF62916FCA7A6008C0D5A /* SplitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
