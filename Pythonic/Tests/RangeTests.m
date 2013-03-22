@@ -42,4 +42,15 @@
     }
 }
 
+-(void) testRange {
+    NSRange range = NSMakeRange(0, 11);
+    NSArray *array = [[NSArray alloc] initWithRange:range];
+    NSInteger count = array.count;
+    GHAssertEquals((NSInteger)11, count, @"array should has 11 items, but now it is %ld", count);
+    for (NSInteger idx=0; idx<11; idx++) {
+        NSNumber *value= [array objectAtIndex:idx];
+        GHAssertEquals(idx, [value integerValue], @"%ld should equal %@", idx, value);
+    }
+}
+
 @end
