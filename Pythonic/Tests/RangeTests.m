@@ -31,6 +31,17 @@
     }
 }
 
+-(void) testRangeFromToReverse {
+    NSArray *array = [[NSArray alloc] initWithFrom:15 to:7];
+    NSInteger count = array.count;
+    GHAssertEquals((NSInteger)8, count, @"array should has 8 items, but now it is %ld", count);
+    for (NSInteger idx=0; idx<8; idx++) {
+        NSNumber *value = [array objectAtIndex:idx];
+        NSInteger n = 15 - idx;
+        GHAssertEquals(n, [value integerValue], @"%ld should equal %@", n, value);
+    }
+}
+
 -(void) testRangeFromToStep {
     NSArray *array = [[NSArray alloc] initWithFrom:2 to:20 step:2];
     NSInteger count = array.count;
@@ -50,6 +61,18 @@
     for (NSInteger idx=0; idx<11; idx++) {
         NSNumber *value= [array objectAtIndex:idx];
         GHAssertEquals(idx, [value integerValue], @"%ld should equal %@", idx, value);
+    }
+}
+
+-(void) testRangeStep {
+    NSRange range = NSMakeRange(0, 8);
+    NSArray *array = [[NSArray alloc] initWithRange:range step:3];
+    NSInteger count = array.count;
+    GHAssertEquals((NSInteger)3, count, @"array should has 3 items, but now it is %ld", count);
+    for (NSInteger idx=0; idx<3; idx++) {
+        NSNumber *value= [array objectAtIndex:idx];
+        NSInteger n = idx*3;
+        GHAssertEquals(n, [value integerValue], @"%ld should equal %@", n, value);
     }
 }
 

@@ -7,13 +7,10 @@
 //
 
 #import "NSArray+Split.h"
-
-typedef BOOL (^InRange)(NSInteger);
+#import "CodeStickets.h"
+#import "NSArray+Index.h"
 
 @interface NSArray (Private)
-
-- (NSInteger) normaric:(NSInteger) index;
-- (InRange) inRangeFrom:(NSInteger)from to:(NSInteger)to;
 
 @end
 
@@ -54,7 +51,7 @@ typedef BOOL (^InRange)(NSInteger);
     NSInteger length = labs(_to - _from);
     NSMutableArray *ret = [[[NSMutableArray alloc] initWithCapacity:length] autorelease];
     void (^next)(NSInteger* idx) = ^(NSInteger* idx){(*idx)+=step;};
-    InRange inRange = [self inRangeFrom:_from to:_to];
+    InRange inRange = MakeInRangeChecker(from, to);
     
     for (NSInteger i=_from; inRange(i); next(&i)) {
         [ret addObject:[self objectAtIndex:i]];
@@ -68,28 +65,6 @@ typedef BOOL (^InRange)(NSInteger);
 
 - (NSArray *) arrayWithTo:(NSInteger)to step:(NSInteger) step {
     return [self arrayWithFrom:0 to:to step:step];
-}
-
-// convert negative index to index like python split
-- (NSInteger)normaric:(NSInteger)index {
-    if (labs(index) > self.count -1) {
-        NSException *exp = [NSException exceptionWithName:@"IndexOutRange"
-                                                   reason:@"value out array range"
-                                                 userInfo:Nil];
-        @throw exp;
-    }
-    if (index < 0) {
-        return self.count + index;
-    } else {
-        return index;
-    }
-}
-
-- (InRange)inRangeFrom:(NSInteger)from to:(NSInteger)to {
-    NSInteger low = MIN(from, to);
-    NSInteger top = MAX(from, to);
-    InRange ret = ^(NSInteger index){return (BOOL)((low<=index)&&(index<top));};
-    return ret;
 }
 
 @end

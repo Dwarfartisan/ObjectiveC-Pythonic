@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+RangeMaker.h"
+#import "CodeStickets.h"
 
 @implementation NSArray (RangeMaker)
 
@@ -21,13 +22,11 @@
 }
 
 - (NSArray *)initWithFrom:(NSInteger)from to:(NSInteger)to {
-    NSMutableArray *data = [[NSMutableArray alloc] initWithCapacity:(to - from)];
-    for (NSInteger i=from; i<to; i++) {
-        [data addObject:[NSNumber numberWithInteger:i]];
+    if (from == to) {
+        return [self init];
     }
-    self = [self initWithArray:data];
-    [data release];
-    return self;
+    NSInteger step  = (to>from)?1:-1;
+    return [self initWithFrom:from to:to step:step];
 }
 
 - (NSArray *)initWithTo:(NSInteger)to {
@@ -46,8 +45,12 @@
 }
 
 - (NSArray *)initWithFrom:(NSInteger)from to:(NSInteger)to step:(NSInteger)step {
-    NSMutableArray *data = [[NSMutableArray alloc] initWithCapacity:(to - from)];
-    for (NSInteger i=from; i<to; i+= step) {
+    if (from==to) {
+        return [self init];
+    }
+    NSMutableArray *data = [[NSMutableArray alloc] initWithCapacity:(to - from)/step];
+    InRange inRange = MakeInRangeChecker(from, to);
+    for (NSInteger i=from; inRange(i); i+= step) {
         [data addObject:[NSNumber numberWithInteger:i]];
     }
     self = [self initWithArray:data];

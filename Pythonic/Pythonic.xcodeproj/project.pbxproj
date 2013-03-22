@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392DF61B16FC60CE008C0D5A /* NSArray+Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 392DF61916FC60CE008C0D5A /* NSArray+Index.h */; };
+		392DF61C16FC60CE008C0D5A /* NSArray+Index.m in Sources */ = {isa = PBXBuildFile; fileRef = 392DF61A16FC60CE008C0D5A /* NSArray+Index.m */; };
+		3960532616FC4D3000B325D8 /* CodeStickets.h in Headers */ = {isa = PBXBuildFile; fileRef = 3960532516FC4D3000B325D8 /* CodeStickets.h */; };
 		396B3BC316FB09FF00B1B339 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BC216FB09FF00B1B339 /* Cocoa.framework */; };
 		396B3BCD16FB09FF00B1B339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 396B3BCB16FB09FF00B1B339 /* InfoPlist.strings */; };
 		396B3BDF16FB0A3E00B1B339 /* NSArray+Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B3BD716FB0A3E00B1B339 /* NSArray+Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +29,7 @@
 		396B3C0E16FB0E3400B1B339 /* Pythonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BBF16FB09FF00B1B339 /* Pythonic.framework */; };
 		396B3C0F16FB0E4600B1B339 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B3BF116FB0DA900B1B339 /* GHUnit.framework */; };
 		396B3C1116FB0E5600B1B339 /* GHUnit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 396B3BF116FB0DA900B1B339 /* GHUnit.framework */; };
+		396B3C1416FB32E400B1B339 /* RangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B3C1316FB32E400B1B339 /* RangeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +46,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		392DF61916FC60CE008C0D5A /* NSArray+Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Index.h"; sourceTree = "<group>"; };
+		392DF61A16FC60CE008C0D5A /* NSArray+Index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Index.m"; sourceTree = "<group>"; };
+		3960532516FC4D3000B325D8 /* CodeStickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStickets.h; sourceTree = "<group>"; };
 		396B3BBF16FB09FF00B1B339 /* Pythonic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pythonic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B3BC216FB09FF00B1B339 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		396B3BC516FB09FF00B1B339 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +75,8 @@
 		396B3C0316FB0DB800B1B339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		396B3C0516FB0DB800B1B339 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		396B3C0616FB0DB800B1B339 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		396B3C1216FB32E400B1B339 /* RangeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeTests.h; sourceTree = "<group>"; };
+		396B3C1316FB32E400B1B339 /* RangeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				396B3BE716FB0A7200B1B339 /* Pythonic.h */,
+				392DF61916FC60CE008C0D5A /* NSArray+Index.h */,
+				392DF61A16FC60CE008C0D5A /* NSArray+Index.m */,
 				396B3BD716FB0A3E00B1B339 /* NSArray+Random.h */,
 				396B3BD816FB0A3E00B1B339 /* NSArray+Random.m */,
 				396B3BD916FB0A3E00B1B339 /* NSArray+RangeMaker.h */,
@@ -144,6 +155,7 @@
 				396B3BDD16FB0A3E00B1B339 /* NSArray+Trim.h */,
 				396B3BDE16FB0A3E00B1B339 /* NSArray+Trim.m */,
 				396B3BC916FB09FF00B1B339 /* Supporting Files */,
+				3960532516FC4D3000B325D8 /* CodeStickets.h */,
 			);
 			path = Pythonic;
 			sourceTree = "<group>";
@@ -164,6 +176,8 @@
 				396B3C0516FB0DB800B1B339 /* AppDelegate.h */,
 				396B3C0616FB0DB800B1B339 /* AppDelegate.m */,
 				396B3BFA16FB0DB800B1B339 /* Supporting Files */,
+				396B3C1216FB32E400B1B339 /* RangeTests.h */,
+				396B3C1316FB32E400B1B339 /* RangeTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -192,6 +206,8 @@
 				396B3BE116FB0A3E00B1B339 /* NSArray+RangeMaker.h in Headers */,
 				396B3BE316FB0A3E00B1B339 /* NSArray+Split.h in Headers */,
 				396B3BE516FB0A3E00B1B339 /* NSArray+Trim.h in Headers */,
+				3960532616FC4D3000B325D8 /* CodeStickets.h in Headers */,
+				392DF61B16FC60CE008C0D5A /* NSArray+Index.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +306,7 @@
 				396B3BE216FB0A3E00B1B339 /* NSArray+RangeMaker.m in Sources */,
 				396B3BE416FB0A3E00B1B339 /* NSArray+Split.m in Sources */,
 				396B3BE616FB0A3E00B1B339 /* NSArray+Trim.m in Sources */,
+				392DF61C16FC60CE008C0D5A /* NSArray+Index.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +316,7 @@
 			files = (
 				396B3C0016FB0DB800B1B339 /* main.m in Sources */,
 				396B3C0716FB0DB800B1B339 /* AppDelegate.m in Sources */,
+				396B3C1416FB32E400B1B339 /* RangeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +448,7 @@
 		396B3C0C16FB0DB800B1B339 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +466,7 @@
 		396B3C0D16FB0DB800B1B339 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +500,7 @@
 				396B3BD616FB09FF00B1B339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		396B3C0B16FB0DB800B1B339 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +509,7 @@
 				396B3C0D16FB0DB800B1B339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
