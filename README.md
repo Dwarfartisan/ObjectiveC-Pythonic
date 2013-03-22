@@ -29,3 +29,9 @@ Split NSArray like Python's list split methods.
 ### NSArray(Trim)
 
 Trim NSArry's empty(@"", @0 , etc) items at start or end.
+
+### NSArray(Index)
+
+Make NSArray can index use negative number like python split. 
+
+It normal be used in split.
