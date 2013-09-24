@@ -6,21 +6,21 @@
 #
 Pod::Spec.new do |s|
   s.name         = "Pythonic"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of Pythonic."
+  s.version      = "0.2.0"
+  s.summary      = "Us NS Collections like Python"
   # s.description  = <<-DESC
   #                   An optional longer description of Pythonic
   #
   #                   * Markdown format.
   #                   * Don't worry about the indent, we strip it!
   #                  DESC
-  s.homepage     = "http://EXAMPLE/Pythonic"
+  s.homepage     = "https://github.com/Dwarfartisan/ObjectiveC-Pythonic"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
   # 'LICENCE*.*' or 'LICENSE*.*', however if the name is different, specify it.
-  s.license      = 'MIT (example)'
-  # s.license      = { :type => 'MIT (example)', :file => 'FILE_LICENSE' }
+  # s.license      = 'LICENSE.md'
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
 
   # Specify the authors of the library, with email addresses. You can often find
   # the email addresses of the authors by using the SCM log. E.g. $ git log
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "http://EXAMPLE/Pythonic.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/Dwarfartisan/ObjectiveC-Pythonic.git", :tag => "0.2.0" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
