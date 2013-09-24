@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3916B937170054F400698C92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916B936170054F400698C92 /* Cocoa.framework */; };
+		3916B941170054F400698C92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3916B93F170054F400698C92 /* InfoPlist.strings */; };
+		3916B943170054F400698C92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3916B942170054F400698C92 /* main.m */; };
+		3916B947170054F400698C92 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3916B945170054F400698C92 /* Credits.rtf */; };
+		3916B94A170054F400698C92 /* DAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3916B949170054F400698C92 /* DAAppDelegate.m */; };
+		3916B94D170054F400698C92 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3916B94B170054F400698C92 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3916B933170054F400698C92 /* Basic GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3916B936170054F400698C92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3916B939170054F400698C92 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3916B93A170054F400698C92 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3916B93B170054F400698C92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3916B93E170054F400698C92 /* Basic GUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Basic GUI-Info.plist"; sourceTree = "<group>"; };
+		3916B940170054F400698C92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3916B942170054F400698C92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3916B944170054F400698C92 /* Basic GUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Basic GUI-Prefix.pch"; sourceTree = "<group>"; };
+		3916B946170054F400698C92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3916B948170054F400698C92 /* DAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAAppDelegate.h; sourceTree = "<group>"; };
+		3916B949170054F400698C92 /* DAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAAppDelegate.m; sourceTree = "<group>"; };
+		3916B94C170054F400698C92 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3916B930170054F400698C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3916B937170054F400698C92 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3916B92A170054F400698C92 = {
+			isa = PBXGroup;
+			children = (
+				3916B93C170054F400698C92 /* Basic GUI */,
+				3916B935170054F400698C92 /* Frameworks */,
+				3916B934170054F400698C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3916B934170054F400698C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3916B933170054F400698C92 /* Basic GUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3916B935170054F400698C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3916B936170054F400698C92 /* Cocoa.framework */,
+				3916B938170054F400698C92 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3916B938170054F400698C92 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3916B939170054F400698C92 /* AppKit.framework */,
+				3916B93A170054F400698C92 /* CoreData.framework */,
+				3916B93B170054F400698C92 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3916B93C170054F400698C92 /* Basic GUI */ = {
+			isa = PBXGroup;
+			children = (
+				3916B948170054F400698C92 /* DAAppDelegate.h */,
+				3916B949170054F400698C92 /* DAAppDelegate.m */,
+				3916B94B170054F400698C92 /* MainMenu.xib */,
+				3916B93D170054F400698C92 /* Supporting Files */,
+			);
+			path = "Basic GUI";
+			sourceTree = "<group>";
+		};
+		3916B93D170054F400698C92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3916B93E170054F400698C92 /* Basic GUI-Info.plist */,
+				3916B93F170054F400698C92 /* InfoPlist.strings */,
+				3916B942170054F400698C92 /* main.m */,
+				3916B944170054F400698C92 /* Basic GUI-Prefix.pch */,
+				3916B945170054F400698C92 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3916B932170054F400698C92 /* Basic GUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3916B950170054F400698C92 /* Build configuration list for PBXNativeTarget "Basic GUI" */;
+			buildPhases = (
+				3916B92F170054F400698C92 /* Sources */,
+				3916B930170054F400698C92 /* Frameworks */,
+				3916B931170054F400698C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Basic GUI";
+			productName = "Basic GUI";
+			productReference = 3916B933170054F400698C92 /* Basic GUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3916B92B170054F400698C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "dwarf-artisan";
+			};
+			buildConfigurationList = 3916B92E170054F400698C92 /* Build configuration list for PBXProject "Basic GUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3916B92A170054F400698C92;
+			productRefGroup = 3916B934170054F400698C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3916B932170054F400698C92 /* Basic GUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3916B931170054F400698C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3916B941170054F400698C92 /* InfoPlist.strings in Resources */,
+				3916B947170054F400698C92 /* Credits.rtf in Resources */,
+				3916B94D170054F400698C92 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3916B92F170054F400698C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3916B943170054F400698C92 /* main.m in Sources */,
+				3916B94A170054F400698C92 /* DAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3916B93F170054F400698C92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3916B940170054F400698C92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3916B945170054F400698C92 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3916B946170054F400698C92 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3916B94B170054F400698C92 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3916B94C170054F400698C92 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3916B94E170054F400698C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3916B94F170054F400698C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3916B951170054F400698C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basic GUI/Basic GUI-Prefix.pch";
+				INFOPLIST_FILE = "Basic GUI/Basic GUI-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3916B952170054F400698C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basic GUI/Basic GUI-Prefix.pch";
+				INFOPLIST_FILE = "Basic GUI/Basic GUI-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3916B92E170054F400698C92 /* Build configuration list for PBXProject "Basic GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3916B94E170054F400698C92 /* Debug */,
+				3916B94F170054F400698C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3916B950170054F400698C92 /* Build configuration list for PBXNativeTarget "Basic GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3916B951170054F400698C92 /* Debug */,
+				3916B952170054F400698C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3916B92B170054F400698C92 /* Project object */;
+}

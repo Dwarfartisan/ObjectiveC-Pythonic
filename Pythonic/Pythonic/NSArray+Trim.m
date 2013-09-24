@@ -13,7 +13,7 @@
 @implementation NSArray (Trim)
 
 - (NSArray *) arrayByLTrim {
-    NSMutableArray *ret = [[[NSMutableArray alloc] initWithArray:self] autorelease];
+    NSMutableArray *ret = [[NSMutableArray alloc] initWithArray:self];
     for (id item in self) {
         if ([kEmptyItems indexOfObject:item]!=NSNotFound) {
             [ret removeObjectAtIndex:0];
@@ -21,11 +21,11 @@
             break;
         }
     }
-    return ret;
+    return [[NSArray alloc] initWithArray:ret];
 }
 
 - (NSArray *) arrayByRTrim {
-    NSMutableArray *ret = [[[NSMutableArray alloc] initWithArray:self] autorelease];
+    NSMutableArray *ret = [[NSMutableArray alloc] initWithArray:self];
     for (id item in [self reverseObjectEnumerator]) {
         if ([kEmptyItems indexOfObject:item]!=NSNotFound) {
             [ret removeLastObject];
@@ -33,7 +33,7 @@
             break;
         }
     }
-    return ret;
+    return [[NSArray alloc] initWithArray:ret];
 }
 
 - (NSArray *) arrayByTrim {

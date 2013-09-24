@@ -17,7 +17,6 @@
         [data addObject:[NSNumber numberWithInteger:i+range.location]];
     }
     self = [self initWithArray:data];
-    [data release];
     return self;
 }
 
@@ -40,7 +39,6 @@
         [data addObject:[NSNumber numberWithInteger:i+range.location]];
     }
     self = [self initWithArray:data];
-    [data release];
     return self;
 }
 
@@ -54,7 +52,6 @@
         [data addObject:[NSNumber numberWithInteger:i]];
     }
     self = [self initWithArray:data];
-    [data release];
     return self;
 }
 
@@ -64,27 +61,27 @@
 }
 
 + (NSArray *)arrayWithRange:(NSRange) range {
-    return [[[NSArray alloc] initWithRange:range] autorelease];
+    return [[NSArray alloc] initWithRange:range];
 }
 
 + (NSArray *)arrayWithFrom:(NSInteger)from to:(NSInteger)to {
-    return [[[NSArray alloc] initWithFrom:from to:to] autorelease];
+    return [[NSArray alloc] initWithFrom:from to:to];
 }
 
 + (NSArray *)arrayWithTo:(NSInteger)to {
-    return [[[NSArray alloc] initWithTo:to] autorelease];
+    return [[NSArray alloc] initWithTo:to];
 }
 
 + (NSArray *)arrayWithRange:(NSRange) range step:(NSInteger)step {
-    return [[[NSArray alloc] initWithRange:range step:step] autorelease];
+    return [[NSArray alloc] initWithRange:range step:step];
 }
 
 + (NSArray *)arrayWithFrom:(NSInteger)from to:(NSInteger)to step:(NSInteger)step {
-    return [[[NSArray alloc] initWithFrom:from to:to step:step] autorelease];
+    return [[NSArray alloc] initWithFrom:from to:to step:step];
 }
 
 + (NSArray *)arrayWithTo:(NSInteger)to step:(NSInteger)step {
-    return [[[NSArray alloc] initWithTo:to step:step] autorelease];
+    return [[NSArray alloc] initWithTo:to step:step];
 }
 
 @end

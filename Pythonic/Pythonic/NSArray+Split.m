@@ -49,14 +49,14 @@
         return @[];
     }
     NSInteger length = labs(_to - _from);
-    NSMutableArray *ret = [[[NSMutableArray alloc] initWithCapacity:length] autorelease];
+    NSMutableArray *ret = [[NSMutableArray alloc] initWithCapacity:length];
     void (^next)(NSInteger* idx) = ^(NSInteger* idx){(*idx)+=step;};
     InRange inRange = MakeInRangeChecker(from, to);
     
     for (NSInteger i=_from; inRange(i); next(&i)) {
         [ret addObject:[self objectAtIndex:i]];
     }
-    return ret;
+    return [[NSArray alloc] initWithArray:ret];
 }
 
 - (NSArray *) arrayWithFrom:(NSInteger)from step:(NSInteger) step {
